@@ -6,3 +6,5 @@ echo " to check Poll SCM and build periodically"
 echo " to check webhook trigger"
 
 echo " to check webhook trigger second time"
+
+echo "to check job to run on slave-1"

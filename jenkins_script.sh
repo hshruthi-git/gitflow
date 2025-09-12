@@ -8,3 +8,5 @@ echo " to check webhook trigger"
 echo " to check webhook trigger second time"
 
 echo "to check job to run on slave-1"
+
+echo "to check webhook in jenkins"

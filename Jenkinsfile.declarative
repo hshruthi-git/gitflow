@@ -1,14 +1,9 @@
 pipeline {
-    agent any
+    agent {label 'master-1'}
     stages {
-        stage('build') {
-            steps {
-                echo "building the code...."
-            }
-        }
-        stage('test') {
-            steps {
-                echo "testing the build...."
+        stage (stage-1){
+            steps{
+                echo " webhook by pipeline job"
             }
         }
     }

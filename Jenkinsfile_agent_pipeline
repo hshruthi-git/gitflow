@@ -4,7 +4,7 @@ pipeline {
         stage ('stage1'){
             agent { label 'master-1' }
             steps {
-                echo "stage-1 executed on master-1"
+                echo "stage-1 executed on master-1.."
             }
         }
         stage ('stage2'){

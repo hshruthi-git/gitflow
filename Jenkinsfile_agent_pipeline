@@ -1,20 +1,20 @@
 pipeline {
-    agent none
+     agent none
     stages {
         stage ('stage1'){
-            agent label 'master-1'
+            agent { label 'master-1' }
             steps {
-                echo "stage-1 executed on master-1.."
+                echo "stage-1 executed on master-1"
             }
         }
         stage ('stage2'){
-            agent label 'slave-1'
+            agent { label 'slave-1' }
             steps {
                 echo "stage-2 executed on node-1"
             }
         }
         stage ('stage3'){
-            agent label 'slave-2'
+            agent { label 'slave-2' }
             steps {
                 echo "stage-3 executed on node-2"
             }
